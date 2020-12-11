@@ -127,7 +127,9 @@ public class JDBCSQLBuilder {
         for (Field field : fields) {
             Column column = new Column();
             column.columnLabel = field.name();
-            column.dbColumnName = field.getProp(SchemaConstants.TALEND_COLUMN_DB_COLUMN_NAME);
+            //the javajet template have an issue for dynamic convert, it don't pass the origin column name
+            String originName = field.getProp(SchemaConstants.TALEND_COLUMN_DB_COLUMN_NAME);
+            column.dbColumnName = originName!=null ? originName: field.name();
 
             boolean isKey = Boolean.valueOf(field.getProp(SchemaConstants.TALEND_COLUMN_IS_KEY));
             if (isKey) {
