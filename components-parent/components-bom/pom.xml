@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.talend.components</groupId>
     <artifactId>components-bom</artifactId>
-    <version>0.28.13-SNAPSHOT</version>
+    <version>0.28.14-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Component BOM</name>
     <properties>
-        <components.version>0.28.13-SNAPSHOT</components.version>
+        <components.version>0.28.14-SNAPSHOT</components.version>
         <daikon.version>0.31.10</daikon.version>
         <!-- repositories -->
         <talend_snapshots_deployment>https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceSnapshot/</talend_snapshots_deployment>
@@ -29,7 +29,7 @@
         <aws-java-sdk-kms.version>${aws.version}</aws-java-sdk-kms.version>
         <aws-java-sdk-s3.version>${aws.version}</aws-java-sdk-s3.version>
         <aws-java-sdk-sts.version>${aws.version}</aws-java-sdk-sts.version>
-        <aws.version>1.11.125</aws.version>
+        <aws.version>1.11.848</aws.version>
         <azure-keyvault-core.version>0.9.7</azure-keyvault-core.version>
         <azure-storage.version>8.6.0</azure-storage.version>
         <msla4j.version>1.4.0</msla4j.version>
@@ -200,6 +200,7 @@
         <osgi.core.version>6.0.0</osgi.core.version>
         <osgi.component.annotations>1.3.0</osgi.component.annotations>
         <talend-proxy.version>1.0.1</talend-proxy.version>
+		<xstream.version>1.4.14</xstream.version>
     </properties>
 
     <distributionManagement>
@@ -1644,6 +1645,11 @@
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-xml</artifactId>
                 <version>${groovy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.thoughtworks.xstream</groupId>
+                <artifactId>xstream</artifactId>
+                <version>${xstream.version}</version>
             </dependency>
             <!-- components-ee -->
             <dependency>

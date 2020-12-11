@@ -4,7 +4,7 @@
 
     <groupId>org.talend.components</groupId>
     <artifactId>components-hadoopcluster-aggregator</artifactId>
-    <version>0.28.13-SNAPSHOT</version>
+    <version>0.28.14-SNAPSHOT</version>
 
     <name>Components - Hadoop Cluster Aggregator</name>
     <packaging>pom</packaging>
